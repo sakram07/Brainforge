@@ -1,9 +1,14 @@
+# importing os and sys to import linear regression from previous directory
+import os
+import sys
+sys.path.append(os.path.join('..', 'algorithms'))
+
 import numpy as np
 import knn as bf
 import pandas as pd
 
 # Get data from file
-df = pd.read_csv('breast-cancer-wisconsin.data', delimiter=',', encoding="utf-8")
+df = pd.read_csv('data/breast-cancer-wisconsin.data', delimiter=',', encoding="utf-8")
 # Replace undefined data with -9999 so it not affect accuracy 
 df.replace('?', -9999, inplace=True)
 # Drop unrelative data

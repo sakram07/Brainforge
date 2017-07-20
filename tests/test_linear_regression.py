@@ -12,7 +12,7 @@ import pandas as pd
 lr = LinearRegression()
 
 # read csv data from text file
-df = pd.read_csv('dummy_data_linear_regression.txt')
+df = pd.read_csv('data/dummy_data_linear_regression.txt')
 
 # convert pandas dataframe to matrix
 data = df.as_matrix()
