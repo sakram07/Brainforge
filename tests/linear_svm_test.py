@@ -1,5 +1,5 @@
 import numpy as np
-import svm as bf
+from linear_svm import Linear_SVM
 
 data_dict = {-1: np.array([[1, 7],
                            [2, 8],
