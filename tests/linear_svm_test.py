@@ -1,6 +1,8 @@
 import numpy as np
 from linear_svm import Linear_SVM
 
+# Visualize the new points as stars
+
 data_dict = {-1: np.array([[1, 7],
                            [2, 8],
                            [3, 8]]),
@@ -8,7 +10,7 @@ data_dict = {-1: np.array([[1, 7],
                           [6, -1],
                           [7, 3]])}
 
-svm = bf.SVM()
+svm = Linear_SVM()
 svm.fit(data=data_dict)
 predict_us = [[0, 10],
               [1, 3],
